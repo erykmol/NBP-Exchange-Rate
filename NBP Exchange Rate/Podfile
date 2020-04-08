@@ -1,0 +1,17 @@
+
+target 'NBP Exchange Rate' do
+
+    use_modular_headers!
+
+    pod 'RxSwift', '~> 5'
+    pod 'RxCocoa', '~> 5'
+
+# RxTest and RxBlocking make the most sense in the context of unit/integration tests
+target 'NBP Exchange RateTests' do
+    inherit! :search_paths
+    use_modular_headers!
+
+    pod 'RxBlocking', '~> 5'
+    pod 'RxTest', '~> 5'
+end
+end 

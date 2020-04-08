@@ -1,0 +1,6 @@
+module Pods_NBP_Exchange_RateTests {
+  umbrella header "Pods-NBP Exchange RateTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
