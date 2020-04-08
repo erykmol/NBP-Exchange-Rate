@@ -124,7 +124,7 @@
 				5D452722243E059C00F664FE /* SceneDelegate.swift */,
 				5DAC08F8243E24E6001FCFD8 /* Extensions */,
 				5D452745243E09D000F664FE /* Model */,
-				5D452746243E09DE00F664FE /* View */,
+				5D452746243E09DE00F664FE /* Views */,
 				5D452744243E09C200F664FE /* ViewModel */,
 				5D452729243E05A000F664FE /* Assets.xcassets */,
 				5D45272E243E05A000F664FE /* Info.plist */,
@@ -158,14 +158,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5D452746243E09DE00F664FE /* View */ = {
+		5D452746243E09DE00F664FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5D452747243E0BDF00F664FE /* MainTabBarViewController.swift */,
 				5D452724243E059C00F664FE /* ExchangeRateViewController.swift */,
 				5DAC08FD243E27FD001FCFD8 /* Storyboards */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5DAC08F8243E24E6001FCFD8 /* Extensions */ = {

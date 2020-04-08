@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="yCB-Qa-IrA">
             <objects>
-                <viewController id="hcC-7P-6Nm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CurrencyViewController" id="hcC-7P-6Nm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vv5-hG-x94">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
