@@ -17,5 +17,5 @@ struct CurrenciesTable: Codable {
 // MARK: - Rate
 struct Rate: Codable {
     let currency, code: String
-    let bid, ask: Double
+    let bid, mid, ask: Double?
 }
