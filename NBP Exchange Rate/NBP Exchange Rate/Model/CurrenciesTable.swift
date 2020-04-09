@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - CurrenciesTable
 struct CurrenciesTable: Codable {
-    let table, no, tradingDate, effectiveDate: String
+    let table, no, effectiveDate: String
     let rates: [Rate]
 }
 

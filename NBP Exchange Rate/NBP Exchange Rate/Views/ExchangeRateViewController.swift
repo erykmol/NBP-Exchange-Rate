@@ -25,11 +25,18 @@ class ExchangeRateViewController: UIViewController {
 
 extension ExchangeRateViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CurrencyExchangeCell", for: indexPath) as! CurrencyExchangeCollectionViewCell
+        
+        cell.currencyNameLabel.text = "Placeholder"
+        cell.averageExchangeRateLabel.text = "Placeholder"
+        cell.publicationDateLabel.text = "Placeholder"
+        cell.currencyCodeLabel.text = "Placeholder"
+        
+        return cell
     }
 }
 
