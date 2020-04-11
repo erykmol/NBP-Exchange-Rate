@@ -12,7 +12,6 @@ extension UICollectionView {
     func setup(viewController: UIViewController) {
         self.delegate = viewController as? UICollectionViewDelegate
         self.dataSource = viewController as? UICollectionViewDataSource
-        self.collectionViewLayout = FlowLayout()
         self.register(CurrencyExchangeCollectionViewCell.self, forCellWithReuseIdentifier: "CurrencyExchangeCell")
     }
 }

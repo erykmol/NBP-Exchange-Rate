@@ -22,11 +22,12 @@ class ExchangeRateViewController: UIViewController {
         super.viewDidLoad()
         collectionView.setup(viewController: self)
         setupNavigationBar()
+        refreshButtonSetup()
         
         loadingIndicator = createLoadingIndicator()
         setupLoadingIndicator(loadingIndicator: loadingIndicator)
         bindActivityIndicator()
-        bindGetTableData(query: "A")
+        bindGetTableData(query: viewModel.tableNameList[tabBarController?.selectedIndex ?? 0])
     }
 
 
@@ -43,7 +44,7 @@ extension ExchangeRateViewController: UICollectionViewDataSource {
         let currencyRate = viewModel.currentTableRates[index]
         
         cell.currencyNameLabel.text = currencyRate.currency
-        cell.averageExchangeRateLabel.text = currencyRate.mid != nil ? currencyRate.mid?.description : "Nie dostępne"
+        cell.averageExchangeRateLabel.text = currencyRate.mid?.description ?? "Nie dostępne"
         cell.publicationDateLabel.text = viewModel.currentTable.effectiveDate
         cell.currencyCodeLabel.text = currencyRate.code
         
@@ -52,7 +53,15 @@ extension ExchangeRateViewController: UICollectionViewDataSource {
 }
 
 extension ExchangeRateViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let destinationViewController = CurrencyViewController.storyboardInstantiate("CurrencyViewControllerStoryboard")
+        let selectedCurrency = viewModel.currentTableRates[indexPath.row]
+        destinationViewController.title = selectedCurrency.currency
+        destinationViewController.tableName = viewModel.currentTable.table
+        destinationViewController.courrencyCode = selectedCurrency.code
         
+        navigationController?.pushViewController(destinationViewController, animated: true)
+    }
 }
 
 extension ExchangeRateViewController {
@@ -80,5 +89,28 @@ extension ExchangeRateViewController {
                 }
         })
         .disposed(by: disposeBag)
+    }
+    
+    @objc func refreshTable() {
+        bindActivityIndicator()
+        bindGetTableData(query: "")
+    }
+}
+
+extension ExchangeRateViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewWidth = collectionView.frame.width
+        
+        return CGSize(
+            width: collectionViewWidth,
+            height: collectionViewWidth / 4)
+    }
+}
+
+extension ExchangeRateViewController {
+    func refreshButtonSetup() {
+        let refreshButton = UIBarButtonItem(image: UIImage(systemName: "arrow.clockwise"), style: .plain, target: self, action: #selector(refreshTable))
+        refreshButton.tintColor = .darkGray
+        self.navigationItem.rightBarButtonItem  = refreshButton
     }
 }
