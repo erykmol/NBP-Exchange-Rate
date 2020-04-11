@@ -1,5 +1,5 @@
 //
-//  NoCaretTextField.swift
+//  DatePickerTextField.swift
 //  NBP Exchange Rate
 //
 //  Created by Eryk Mól on 10/04/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NoCaretTextField: UITextField {
+class DatePickerTextField: UITextField {
     
     let dateFormatter = DateFormatter()
     
