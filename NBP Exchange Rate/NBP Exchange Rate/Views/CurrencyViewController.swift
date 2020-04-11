@@ -10,21 +10,28 @@ import UIKit
 
 class CurrencyViewController: UIViewController {
 
+    @IBOutlet weak var fromDateTextField: DatePickerTextField!
+    @IBOutlet weak var toDateTextField: DatePickerTextField!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var textFieldList: [UITextField] = []
+    var tableName: String!
+    var courrencyCode: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        textFieldList = [fromDateTextField, toDateTextField]
+        
+        searchButton.tintColor = .white
+        searchButton.backgroundColor = .systemGreen
+        searchButton.layer.cornerRadius = 10
+        
+        let dismissTapGesture = UITapGestureRecognizer(target: self, action: #selector(onTapDismiss))
+        view.addGestureRecognizer(dismissTapGesture)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func onTapDismiss() {
+        view.endEditing(true)
     }
-    */
-
 }
