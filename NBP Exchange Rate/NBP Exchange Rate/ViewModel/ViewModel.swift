@@ -14,6 +14,7 @@ class ViewModel {
     
     let activityIndicator = ActivityIndicator()
     let decoder = JSONDecoder()
+    let tableNameList = ["A", "B", "C"]
     var currentTable: CurrenciesTable!
     var currentTableRates: [Rate] = []
     
@@ -37,7 +38,6 @@ extension ViewModel {
                 }
                 
                 do {
-                    print(try! self.decoder.decode([CurrenciesTable].self, from: data))
                     self.currentTable = try self.decoder.decode([CurrenciesTable].self, from: data)[0]
                     self.currentTableRates = self.currentTable.rates
                     observer.onCompleted()

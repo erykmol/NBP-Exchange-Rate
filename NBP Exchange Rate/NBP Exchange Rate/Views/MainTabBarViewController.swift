@@ -14,13 +14,13 @@ class MainTabBarViewController: UITabBarController {
         super.viewDidLoad()
 
         var controllers: [UINavigationController] = []
-        let titleList = ["Table A", "Table B", "Table C"]
         let viewModel = ViewModel()
         
         for index in 0...2 {
             let navigationController = UINavigationController()
             let viewController = ExchangeRateViewController.storyboardInstantiate("ExchangeRateViewControllerStoryboard")
-            let icon = UITabBarItem(title: titleList[index], image: UIImage(systemName: "table"), selectedImage: UIImage(systemName: "table.fill"))
+            let tableTitle = "Table " + viewModel.tableNameList[index]
+            let icon = UITabBarItem(title: tableTitle, image: UIImage(systemName: "table"), selectedImage: UIImage(systemName: "table.fill"))
             
             viewController.viewModel = viewModel
             viewController.tabBarItem = icon
