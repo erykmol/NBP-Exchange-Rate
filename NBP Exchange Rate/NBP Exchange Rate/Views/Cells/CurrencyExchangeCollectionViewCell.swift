@@ -59,28 +59,28 @@ class CurrencyExchangeCollectionViewCell: UICollectionViewCell {
         addSubview(averageExchangeRateLabel)
         
         NSLayoutConstraint.activate([
-            currencyNameLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            currencyNameLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 16),
+            currencyNameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            currencyNameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
             currencyNameLabel.heightAnchor.constraint(equalToConstant: 24),
             currencyNameLabel.widthAnchor.constraint(equalToConstant: frame.width / 2 - 32)
         ])
         
         NSLayoutConstraint.activate([
-            publicationDateLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            publicationDateLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             publicationDateLabel.topAnchor.constraint(equalTo: currencyNameLabel.bottomAnchor, constant: 16),
             publicationDateLabel.heightAnchor.constraint(equalToConstant: 24),
             publicationDateLabel.widthAnchor.constraint(equalToConstant: frame.width / 2 - 32)
         ])
         
         NSLayoutConstraint.activate([
-            currencyCodeLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
-            currencyCodeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 16),
+            currencyCodeLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+            currencyCodeLabel.topAnchor.constraint(equalTo: topAnchor, constant: 16),
             currencyCodeLabel.heightAnchor.constraint(equalToConstant: 24),
             currencyCodeLabel.widthAnchor.constraint(equalToConstant: frame.width / 2 - 32)
         ])
         
         NSLayoutConstraint.activate([
-            averageExchangeRateLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            averageExchangeRateLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             averageExchangeRateLabel.topAnchor.constraint(equalTo: currencyCodeLabel.bottomAnchor, constant: 16),
             averageExchangeRateLabel.heightAnchor.constraint(equalToConstant: 24),
             averageExchangeRateLabel.widthAnchor.constraint(equalToConstant: frame.width / 2 - 32)
