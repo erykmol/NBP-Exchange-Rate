@@ -19,7 +19,7 @@ class MainTabBarViewController: UITabBarController {
         for index in 0...2 {
             let navigationController = UINavigationController()
             let viewController = ExchangeRateViewController.storyboardInstantiate("ExchangeRateViewControllerStoryboard")
-            let tableTitle = "Table " + viewModel.tableNameList[index]
+            let tableTitle = "Tabela " + viewModel.tableNameList[index]
             let icon = UITabBarItem(title: tableTitle, image: UIImage(systemName: "table"), selectedImage: UIImage(systemName: "table.fill"))
             
             viewController.viewModel = viewModel
