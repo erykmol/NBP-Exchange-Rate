@@ -33,7 +33,7 @@ class CurrencyViewController: UIViewController {
         textFieldList = [fromDateTextField, toDateTextField]
         
         loadingIndicator = createLoadingIndicator()
-        loadingIndicator.setup(view: collectionView)
+        loadingIndicator.setup(superView: view, siblingView: collectionView)
         setupRefreshButton()
         setupSearchButton()
         setupDismissTapGestureRecognizer()
@@ -121,6 +121,7 @@ extension CurrencyViewController {
     
     @objc func search() {
         query = tableName + "/" + currencyCode + "/" + fromDateTextField.unwrappedText + "/" + toDateTextField.unwrappedText
+        onTapDismiss()
         bindActivityIndicator()
         bindGetCurrencyRatesData(query: query)
     }

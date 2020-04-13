@@ -28,7 +28,7 @@ class ExchangeRateViewController: UIViewController {
         collectionView.setup(viewController: self)
         setupNavigationBar()
         setupRefreshButton()
-        loadingIndicator.setup(view: collectionView)
+        loadingIndicator.setup(superView: view, siblingView: collectionView)
     }
     
     override func viewDidAppear(_ animated: Bool) {

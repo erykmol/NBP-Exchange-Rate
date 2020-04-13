@@ -9,12 +9,12 @@
 import UIKit
 
 extension UIActivityIndicatorView {
-    func setup(view: UIView) {
-        view.addSubview(self)
+    func setup(superView: UIView, siblingView: UIView) {
+        superView.addSubview(self)
         
         NSLayoutConstraint.activate([
-            self.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            self.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            self.centerXAnchor.constraint(equalTo: siblingView.centerXAnchor),
+            self.centerYAnchor.constraint(equalTo: siblingView.centerYAnchor),
             self.heightAnchor.constraint(equalToConstant: 60),
             self.widthAnchor.constraint(equalToConstant: 60)
         ])
