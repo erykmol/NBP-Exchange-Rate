@@ -12,6 +12,11 @@ extension UICollectionView {
     func setup(viewController: UIViewController) {
         self.delegate = viewController as? UICollectionViewDelegate
         self.dataSource = viewController as? UICollectionViewDataSource
-        self.register(CurrencyExchangeCollectionViewCell.self, forCellWithReuseIdentifier: "CurrencyExchangeCell")
+        if viewController.isKind(of: ExchangeRateViewController.self) {
+            self.register(CurrencyExchangeCollectionViewCell.self, forCellWithReuseIdentifier: "CurrencyExchangeCell")
+        } else {
+            self.register(CurrencyCollectionViewCell.self, forCellWithReuseIdentifier: "CurrencyDateCell")
+        }
+        
     }
 }

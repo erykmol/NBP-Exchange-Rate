@@ -26,6 +26,5 @@ extension UIViewController {
             navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.darkGray]
             navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.darkGray]
         }
-        navigationItem.title = "Table"
     }
 }

@@ -12,12 +12,18 @@ class DatePickerTextField: UITextField {
     
     let dateFormatter = DateFormatter()
     
+    var unwrappedText: String {
+        return self.text!
+    }
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         dateFormatter.dateFormat = "yyyy-MM-dd"
+        
         let datePicker = UIDatePicker()
         datePicker.addTarget(self, action: #selector(onDateChange(_:)), for: .valueChanged)
         datePicker.datePickerMode = .date
+        
         inputView = datePicker
         text = dateFormatter.string(from: datePicker.date)
     }
