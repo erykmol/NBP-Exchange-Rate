@@ -10,17 +10,19 @@
 		39BDF677444B31B234A5A2D9 /* libPods-NBP Exchange Rate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA570A5F91590FBE2326AE36 /* libPods-NBP Exchange Rate.a */; };
 		5D43C318243F4539005B75C9 /* CurrencyExchangeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C316243F4539005B75C9 /* CurrencyExchangeCollectionViewCell.swift */; };
 		5D43C31C243F4D3C005B75C9 /* Observable+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C31B243F4D3C005B75C9 /* Observable+ActivityIndicator.swift */; };
-		5D43C31E243F50C3005B75C9 /* UIViewController+LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C31D243F50C3005B75C9 /* UIViewController+LoadingIndicator.swift */; };
+		5D43C31E243F50C3005B75C9 /* UIViewController+createLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C31D243F50C3005B75C9 /* UIViewController+createLoadingIndicator.swift */; };
 		5D452721243E059C00F664FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D452720243E059C00F664FE /* AppDelegate.swift */; };
 		5D452723243E059C00F664FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D452722243E059C00F664FE /* SceneDelegate.swift */; };
 		5D452725243E059C00F664FE /* ExchangeRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D452724243E059C00F664FE /* ExchangeRateViewController.swift */; };
 		5D452728243E059C00F664FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D452726243E059C00F664FE /* Main.storyboard */; };
 		5D45272A243E05A000F664FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D452729243E05A000F664FE /* Assets.xcassets */; };
 		5D45272D243E05A000F664FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D45272B243E05A000F664FE /* LaunchScreen.storyboard */; };
-		5D452738243E05A000F664FE /* NBP_Exchange_RateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D452737243E05A000F664FE /* NBP_Exchange_RateTests.swift */; };
+		5D452738243E05A000F664FE /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D452737243E05A000F664FE /* ViewModelTests.swift */; };
 		5D452743243E070600F664FE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D452742243E070600F664FE /* ViewModel.swift */; };
 		5D452748243E0BDF00F664FE /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D452747243E0BDF00F664FE /* MainTabBarViewController.swift */; };
 		5D45274A243E0D4C00F664FE /* ExchangeRateViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D452749243E0D4C00F664FE /* ExchangeRateViewControllerStoryboard.storyboard */; };
+		5D46C8EA2441F8CD00A4E171 /* CurrencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D46C8E92441F8CD00A4E171 /* CurrencyCollectionViewCell.swift */; };
+		5D46C8EE2442812300A4E171 /* UIActivityIndicatorView+setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D46C8ED2442812300A4E171 /* UIActivityIndicatorView+setup.swift */; };
 		5D4944C72440714900BBCCD9 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4944C62440714900BBCCD9 /* CurrencyViewController.swift */; };
 		5D4944C92440DD2F00BBCCD9 /* DatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4944C82440DD2F00BBCCD9 /* DatePickerTextField.swift */; };
 		5DAC08F3243E182E001FCFD8 /* CurrencyViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAC08F2243E182E001FCFD8 /* CurrencyViewControllerStoryboard.storyboard */; };
@@ -46,7 +48,7 @@
 		57A378079721C2036CE74A77 /* Pods-NBP Exchange RateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBP Exchange RateTests.debug.xcconfig"; path = "Target Support Files/Pods-NBP Exchange RateTests/Pods-NBP Exchange RateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D43C316243F4539005B75C9 /* CurrencyExchangeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeCollectionViewCell.swift; sourceTree = "<group>"; };
 		5D43C31B243F4D3C005B75C9 /* Observable+ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ActivityIndicator.swift"; sourceTree = "<group>"; };
-		5D43C31D243F50C3005B75C9 /* UIViewController+LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadingIndicator.swift"; sourceTree = "<group>"; };
+		5D43C31D243F50C3005B75C9 /* UIViewController+createLoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+createLoadingIndicator.swift"; sourceTree = "<group>"; };
 		5D45271D243E059C00F664FE /* NBP Exchange Rate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBP Exchange Rate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D452720243E059C00F664FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D452722243E059C00F664FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,11 +58,13 @@
 		5D45272C243E05A000F664FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D45272E243E05A000F664FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D452733243E05A000F664FE /* NBP Exchange RateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NBP Exchange RateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D452737243E05A000F664FE /* NBP_Exchange_RateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBP_Exchange_RateTests.swift; sourceTree = "<group>"; };
+		5D452737243E05A000F664FE /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		5D452739243E05A000F664FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D452742243E070600F664FE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5D452747243E0BDF00F664FE /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		5D452749243E0D4C00F664FE /* ExchangeRateViewControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExchangeRateViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
+		5D46C8E92441F8CD00A4E171 /* CurrencyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionViewCell.swift; sourceTree = "<group>"; };
+		5D46C8ED2442812300A4E171 /* UIActivityIndicatorView+setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+setup.swift"; sourceTree = "<group>"; };
 		5D4944C62440714900BBCCD9 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		5D4944C82440DD2F00BBCCD9 /* DatePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTextField.swift; sourceTree = "<group>"; };
 		5DAC08F2243E182E001FCFD8 /* CurrencyViewControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrencyViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
@@ -105,6 +109,15 @@
 				BED73FAF9DE5D4FA2D900B24 /* Pods-NBP Exchange RateTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5D42250F2443D88200678F28 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C316243F4539005B75C9 /* CurrencyExchangeCollectionViewCell.swift */,
+				5D46C8E92441F8CD00A4E171 /* CurrencyCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		5D43C31A243F4D10005B75C9 /* RxNBP Exchange Rates */ = {
@@ -154,7 +167,7 @@
 		5D452736243E05A000F664FE /* NBP Exchange RateTests */ = {
 			isa = PBXGroup;
 			children = (
-				5D452737243E05A000F664FE /* NBP_Exchange_RateTests.swift */,
+				5D452737243E05A000F664FE /* ViewModelTests.swift */,
 				5D452739243E05A000F664FE /* Info.plist */,
 			);
 			path = "NBP Exchange RateTests";
@@ -184,7 +197,7 @@
 				5D452724243E059C00F664FE /* ExchangeRateViewController.swift */,
 				5D4944C62440714900BBCCD9 /* CurrencyViewController.swift */,
 				5DAC08FD243E27FD001FCFD8 /* Storyboards */,
-				5D43C316243F4539005B75C9 /* CurrencyExchangeCollectionViewCell.swift */,
+				5D42250F2443D88200678F28 /* Cells */,
 				5D4944C82440DD2F00BBCCD9 /* DatePickerTextField.swift */,
 			);
 			path = Views;
@@ -193,10 +206,11 @@
 		5DAC08F8243E24E6001FCFD8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5D43C31D243F50C3005B75C9 /* UIViewController+LoadingIndicator.swift */,
+				5D43C31D243F50C3005B75C9 /* UIViewController+createLoadingIndicator.swift */,
 				5DAC08F9243E250C001FCFD8 /* UIViewController+setupNavigationBar.swift */,
 				5DAC08FB243E255D001FCFD8 /* UICollectionView+setup.swift */,
 				5DAC08FE243E2922001FCFD8 /* UIViewController+storyboardInstantiate.swift */,
+				5D46C8ED2442812300A4E171 /* UIActivityIndicatorView+setup.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,10 +398,12 @@
 				5DAC0902243E38E7001FCFD8 /* CurrencyMeanRateTable.swift in Sources */,
 				5DAC08F5243E1D73001FCFD8 /* CurrenciesTable.swift in Sources */,
 				5DAC08FA243E250C001FCFD8 /* UIViewController+setupNavigationBar.swift in Sources */,
+				5D46C8EE2442812300A4E171 /* UIActivityIndicatorView+setup.swift in Sources */,
 				5D452723243E059C00F664FE /* SceneDelegate.swift in Sources */,
 				5D43C31C243F4D3C005B75C9 /* Observable+ActivityIndicator.swift in Sources */,
 				5DAC08FF243E2922001FCFD8 /* UIViewController+storyboardInstantiate.swift in Sources */,
-				5D43C31E243F50C3005B75C9 /* UIViewController+LoadingIndicator.swift in Sources */,
+				5D43C31E243F50C3005B75C9 /* UIViewController+createLoadingIndicator.swift in Sources */,
+				5D46C8EA2441F8CD00A4E171 /* CurrencyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D452738243E05A000F664FE /* NBP_Exchange_RateTests.swift in Sources */,
+				5D452738243E05A000F664FE /* ViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

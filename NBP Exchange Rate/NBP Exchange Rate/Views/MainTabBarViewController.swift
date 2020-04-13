@@ -24,10 +24,14 @@ class MainTabBarViewController: UITabBarController {
             
             viewController.viewModel = viewModel
             viewController.tabBarItem = icon
+            viewController.title = tableTitle
+            
             navigationController.viewControllers = [viewController]
             controllers.append(navigationController)
         }
-        self.viewControllers = controllers
-        self.selectedIndex = 0
+        
+        tabBar.tintColor = .systemGreen
+        viewControllers = controllers
+        selectedIndex = 0
     }
 }
